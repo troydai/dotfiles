@@ -1,8 +1,14 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
+# Find the directory where the .zshrc reside. From this location, all the
+# customization will be load.
+DOTFILE_ROOT=$(dirname $(readlink $HOME/.zshrc))
+
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/troydai/.oh-my-zsh"
+export ZSH="$DOTFILE_ROOT/zsh/oh-my-zsh"
+
+ZSH_CUSTOM="$DOTFILE_ROOT/zsh/custom"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -59,9 +65,6 @@ ZSH_THEME=robbyrussell
 # or set a custom format using the strftime function format specifications,
 # see 'man strftime' for details.
 # HIST_STAMPS="mm/dd/yyyy"
-
-# Would you like to use another custom folder than $ZSH/custom?
-# ZSH_CUSTOM=/path/to/new-custom-folder
 
 # Which plugins would you like to load?
 # Standard plugins can be found in $ZSH/plugins/
