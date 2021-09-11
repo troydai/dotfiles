@@ -103,3 +103,6 @@ alias ohmyzsh="vim ~/.oh-my-zsh"
 alias dotfileroot="cd $DOTFILE_ROOT"
 
 set -o vi
+
+# For local specific configuration, leaves it in .zshrc.local to avoid exposure.
+if [ -f ~/.zshrc.local ]; then source ~/.zshrc.local; fi
