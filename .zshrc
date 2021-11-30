@@ -71,7 +71,7 @@ ZSH_THEME=robbyrussell
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git docker docker-compose gcloud)
+plugins=(git docker docker-compose)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -106,3 +106,4 @@ set -o vi
 
 # For local specific configuration, leaves it in .zshrc.local to avoid exposure.
 if [ -f ~/.zshrc.local ]; then source ~/.zshrc.local; fi
+
