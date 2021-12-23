@@ -3,3 +3,7 @@
 This repoistory contains the ".files" that defines my workspace.
 
 Signed by Troy Dai
+
+## Use
+
+ln -s ~/code/dotfiles/.zshrc ~/.zshrc

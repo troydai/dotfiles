@@ -101,9 +101,15 @@ source $ZSH/oh-my-zsh.sh
 alias zshconfig="vim ~/.zshrc"
 alias ohmyzsh="vim ~/.oh-my-zsh"
 alias dotfileroot="cd $DOTFILE_ROOT"
+alias v="nvim"
 
 set -o vi
 
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
 # For local specific configuration, leaves it in .zshrc.local to avoid exposure.
 if [ -f ~/.zshrc.local ]; then source ~/.zshrc.local; fi
+
+cd ~
+
 
