@@ -1,7 +1,7 @@
 #!/bin/bash
 
 sudo apt-get update
-sudo apt-get install neovim tmux zsh
+sudo apt-get install -y neovim tmux zsh
 
 DOTFILE_ROOT=$(cd $(dirname $0); cd ..; pwd)
 
@@ -15,4 +15,4 @@ ln -s $DOTFILE_ROOT/nvim/vim-plug/plug.vim ~/.local/share/nvim/site/autoload/plu
 ln -s $DOTFILE_ROOT/fzf                    ~/.fzf
 
 nvim +PlugInstall +qa
-~/.fzf/install
+~/.fzf/install --no-fish --no-update-rc --completion --key-bindings
