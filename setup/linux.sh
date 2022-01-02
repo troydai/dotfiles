@@ -16,3 +16,4 @@ ln -s $DOTFILE_ROOT/fzf                    ~/.fzf
 
 nvim +PlugInstall +qa
 ~/.fzf/install --no-fish --no-update-rc --completion --key-bindings
+
