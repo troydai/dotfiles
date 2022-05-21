@@ -102,6 +102,7 @@ alias zshconfig="vim ~/.zshrc"
 alias ohmyzsh="vim ~/.oh-my-zsh"
 alias dotfileroot="cd $DOTFILE_ROOT"
 alias v="nvim"
+alias vim="nvim"
 
 set -o vi
 
@@ -111,6 +112,7 @@ set -o vi
 if [ -f ~/.zshrc.local ]; then source ~/.zshrc.local; fi
 
 export GPG_TTY=$(tty)
+export PATH=$PATH:$HOME/.local/bin
 
 cd ~
 

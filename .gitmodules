@@ -7,3 +7,6 @@
 [submodule "fzf"]
 	path = fzf
 	url = https://github.com/junegunn/fzf.git
+[submodule "nvim/packer"]
+	path = nvim/packer
+	url = https://github.com/wbthomason/packer.nvim.git

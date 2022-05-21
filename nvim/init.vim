@@ -26,5 +26,14 @@ set ttyfast                 " Speed up scrolling in Vim
 call plug#begin()
 Plug 'tpope/vim-sensible'
 Plug '~/.fzf'
+Plug 'junegunn/seoul256.vim'
+Plug 'EdenEast/nightfox.nvim'
+Plug 'kyazdani42/nvim-web-devicons' " for file icons
+Plug 'kyazdani42/nvim-tree.lua'
 call plug#end()
+
+" let g:seoul256_background = 234
+" color seoul256
+
+colorscheme nightfox
 
